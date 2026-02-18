@@ -37,7 +37,9 @@
         "claude-code",
         "openclaw"
       ],
-      "added": "2026-02-18"
+      "added": "2026-02-18",
+      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
+      "verified": true
     },
     {
       "name": "defi-templates",
@@ -61,7 +63,9 @@
         "claude-code",
         "openclaw"
       ],
-      "added": "2026-02-18"
+      "added": "2026-02-18",
+      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
+      "verified": true
     },
     {
       "name": "nft-standards",
@@ -84,7 +88,9 @@
         "claude-code",
         "openclaw"
       ],
-      "added": "2026-02-18"
+      "added": "2026-02-18",
+      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
+      "verified": true
     },
     {
       "name": "solidity-security",
@@ -106,7 +112,9 @@
         "claude-code",
         "openclaw"
       ],
-      "added": "2026-02-18"
+      "added": "2026-02-18",
+      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
+      "verified": true
     },
     {
       "name": "web3-testing",
@@ -128,7 +136,9 @@
         "claude-code",
         "openclaw"
       ],
-      "added": "2026-02-18"
+      "added": "2026-02-18",
+      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
+      "verified": true
     },
     {
       "name": "dead-drop",
@@ -150,7 +160,9 @@
         "claude-code",
         "openclaw"
       ],
-      "added": "2026-02-18"
+      "added": "2026-02-18",
+      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
+      "verified": true
     },
     {
       "name": "ren-portal",
@@ -171,7 +183,9 @@
         "claude-code",
         "openclaw"
       ],
-      "added": "2026-02-18"
+      "added": "2026-02-18",
+      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
+      "verified": true
     },
     {
       "name": "vps-management",
@@ -193,7 +207,9 @@
         "claude-code",
         "openclaw"
       ],
-      "added": "2026-02-18"
+      "added": "2026-02-18",
+      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
+      "verified": true
     },
     {
       "name": "skill-security-audit",
@@ -215,7 +231,9 @@
         "claude-code",
         "openclaw"
       ],
-      "added": "2026-02-18"
+      "added": "2026-02-18",
+      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
+      "verified": true
     },
     {
       "name": "loop-bot-control",
@@ -237,7 +255,9 @@
         "claude-code",
         "openclaw"
       ],
-      "added": "2026-02-18"
+      "added": "2026-02-18",
+      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
+      "verified": true
     },
     {
       "name": "risk-metrics",
@@ -261,7 +281,14 @@
         "claude-code",
         "openclaw"
       ],
-      "added": "2026-02-18"
+      "added": "2026-02-18",
+      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
+      "verified": true
     }
-  ]
+  ],
+  "security": {
+    "signature_verification": true,
+    "checksum_algorithm": "sha256",
+    "last_verified": "2026-02-18T23:04:00Z"
+  }
 }
