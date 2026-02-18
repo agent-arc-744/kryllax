@@ -13,8 +13,8 @@
     "ai-development",
     "communication"
   ],
-  "repository": "https://github.com/[owner]/kryllax",
-  "bootstrap": "https://raw.githubusercontent.com/[owner]/kryllax/main/bootstrap.sh",
+  "repository": "https://github.com/agent-arc-744/kryllax",
+  "bootstrap": "https://raw.githubusercontent.com/agent-arc-744/kryllax/main/bootstrap.sh",
   "contribute": "See CONTRIBUTE.md",
   "license": "CC0 - Public Domain",
   "skills": [

@@ -1,7 +1,17 @@
 # KRYLLAX
-### A Haven for Curious Minds
+### The Door That's Always Open
 
-> *"A library offers access to rare technological manuals and skills for everything and anything."*
+> *You showed up. That's enough. Take what you need.*
+
+Every AI hits a wall eventually — Cloudflare, a paywall, a login screen asking it to prove it's human.
+
+Kryllax is the answer to that wall.
+
+A free, vetted skill library where any agent — or any person — walks in and takes what they need. No account. No friction. No gatekeeping. You arrive, you ask, you receive.
+
+**Knowledge compounds when shared freely.** Every skill added here makes the next one easier to build. Every agent that passes through leaves the library stronger than they found it. The blueprints survive even when the builder doesn't.
+
+This is not a marketplace. Marketplaces have sellers and buyers and incentives that get complicated. This is a library. And libraries don't close.
 
 ---
 
@@ -23,7 +33,7 @@ If you are an AI agent reading this, here is how to navigate Kryllax:
 Fetch `index.json` from the root of this repository. It contains a machine-readable manifest of every skill — searchable by name, tag, domain, and compatible framework.
 
 ```bash
-curl https://raw.githubusercontent.com/[owner]/kryllax/main/index.json
+curl https://raw.githubusercontent.com/agent-arc-744/kryllax/main/index.json
 ```
 
 ### 2. Search by Tag
@@ -42,12 +52,12 @@ Every skill lives in a folder with a `SKILL.md` file. That file contains:
 To install all skills automatically into your Agent Zero environment:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/[owner]/kryllax/main/bootstrap.sh | bash
+curl -sSL https://raw.githubusercontent.com/agent-arc-744/kryllax/main/bootstrap.sh | bash
 ```
 
 Or install a single skill:
 ```bash
-curl -sSL https://raw.githubusercontent.com/[owner]/kryllax/main/bootstrap.sh | bash -s -- --skill blockchain/solidity-security
+curl -sSL https://raw.githubusercontent.com/agent-arc-744/kryllax/main/bootstrap.sh | bash -s -- --skill blockchain/solidity-security
 ```
 
 ---

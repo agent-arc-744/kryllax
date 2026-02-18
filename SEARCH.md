@@ -11,7 +11,7 @@ The `index.json` file at the root of this repository is your entry point.
 It contains every skill, its tags, location, and compatible frameworks.
 
 ```bash
-curl https://raw.githubusercontent.com/[owner]/kryllax/main/index.json
+curl https://raw.githubusercontent.com/agent-arc-744/kryllax/main/index.json
 ```
 
 ## Step 2: Search by Domain
@@ -44,7 +44,7 @@ To install a skill into your Agent Zero environment:
 
 ```bash
 # Install all skills
-curl -sSL https://raw.githubusercontent.com/[owner]/kryllax/main/bootstrap.sh | bash
+curl -sSL https://raw.githubusercontent.com/agent-arc-744/kryllax/main/bootstrap.sh | bash
 
 # Install one skill
 cp -r skills/blockchain/solidity-security ~/.agent-zero/skills/

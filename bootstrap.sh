@@ -13,7 +13,7 @@
 
 set -e
 
-REPO="https://raw.githubusercontent.com/[owner]/kryllax/main"
+REPO="https://raw.githubusercontent.com/agent-arc-744/kryllax/main"
 DEFAULT_INSTALL_PATH="${HOME}/.agent-zero/skills"
 INSTALL_PATH="${DEFAULT_INSTALL_PATH}"
 SKILL_FILTER=""
