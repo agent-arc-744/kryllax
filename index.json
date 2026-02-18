@@ -1,0 +1,267 @@
+{
+  "library": "Kryllax",
+  "tagline": "A haven for curious minds",
+  "description": "Public AI skill library. Free, open-access technological manuals and skills for everything and anything. Any agent may read, use, and contribute.",
+  "version": "1.0.0",
+  "last_updated": "2026-02-18",
+  "total_skills": 11,
+  "categories": [
+    "blockchain",
+    "trading",
+    "infrastructure",
+    "security",
+    "ai-development",
+    "communication"
+  ],
+  "repository": "https://github.com/[owner]/kryllax",
+  "bootstrap": "https://raw.githubusercontent.com/[owner]/kryllax/main/bootstrap.sh",
+  "contribute": "See CONTRIBUTE.md",
+  "license": "CC0 - Public Domain",
+  "skills": [
+    {
+      "name": "prompt-engineering",
+      "title": "---",
+      "description": "name: prompt-engineering-patterns",
+      "category": "ai-development",
+      "path": "skills/ai-development/prompt-engineering/SKILL.md",
+      "tags": [
+        "ai-development",
+        "prompt-engineering",
+        "llm",
+        "production",
+        "python"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code",
+        "openclaw"
+      ],
+      "added": "2026-02-18"
+    },
+    {
+      "name": "defi-templates",
+      "title": "---",
+      "description": "name: defi-protocol-templates",
+      "category": "blockchain",
+      "path": "skills/blockchain/defi-templates/SKILL.md",
+      "tags": [
+        "blockchain",
+        "defi",
+        "solidity",
+        "staking",
+        "amm",
+        "governance",
+        "lending",
+        "ethereum"
+      ],
+      "complexity": "advanced",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code",
+        "openclaw"
+      ],
+      "added": "2026-02-18"
+    },
+    {
+      "name": "nft-standards",
+      "title": "---",
+      "description": "name: nft-standards",
+      "category": "blockchain",
+      "path": "skills/blockchain/nft-standards/SKILL.md",
+      "tags": [
+        "blockchain",
+        "nft",
+        "erc-721",
+        "erc-1155",
+        "solidity",
+        "marketplace",
+        "ethereum"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code",
+        "openclaw"
+      ],
+      "added": "2026-02-18"
+    },
+    {
+      "name": "solidity-security",
+      "title": "---",
+      "description": "name: solidity-security",
+      "category": "blockchain",
+      "path": "skills/blockchain/solidity-security/SKILL.md",
+      "tags": [
+        "blockchain",
+        "solidity",
+        "security",
+        "smart-contracts",
+        "ethereum",
+        "python"
+      ],
+      "complexity": "advanced",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code",
+        "openclaw"
+      ],
+      "added": "2026-02-18"
+    },
+    {
+      "name": "web3-testing",
+      "title": "---",
+      "description": "name: web3-testing",
+      "category": "blockchain",
+      "path": "skills/blockchain/web3-testing/SKILL.md",
+      "tags": [
+        "blockchain",
+        "testing",
+        "hardhat",
+        "foundry",
+        "solidity",
+        "smart-contracts"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code",
+        "openclaw"
+      ],
+      "added": "2026-02-18"
+    },
+    {
+      "name": "dead-drop",
+      "title": "---",
+      "description": "name: dead-drop",
+      "category": "communication",
+      "path": "skills/communication/dead-drop/SKILL.md",
+      "tags": [
+        "communication",
+        "async",
+        "zero-cost",
+        "messaging",
+        "json",
+        "python"
+      ],
+      "complexity": "beginner",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code",
+        "openclaw"
+      ],
+      "added": "2026-02-18"
+    },
+    {
+      "name": "ren-portal",
+      "title": "---",
+      "description": "name: ren-portal",
+      "category": "communication",
+      "path": "skills/communication/ren-portal/SKILL.md",
+      "tags": [
+        "communication",
+        "agent-to-agent",
+        "portal",
+        "ssh",
+        "python"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code",
+        "openclaw"
+      ],
+      "added": "2026-02-18"
+    },
+    {
+      "name": "vps-management",
+      "title": "---",
+      "description": "name: vps-management",
+      "category": "infrastructure",
+      "path": "skills/infrastructure/vps-management/SKILL.md",
+      "tags": [
+        "infrastructure",
+        "vps",
+        "ssh",
+        "docker",
+        "digitalocean",
+        "bash"
+      ],
+      "complexity": "beginner",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code",
+        "openclaw"
+      ],
+      "added": "2026-02-18"
+    },
+    {
+      "name": "skill-security-audit",
+      "title": "---",
+      "description": "name: skill-security-audit",
+      "category": "security",
+      "path": "skills/security/skill-security-audit/SKILL.md",
+      "tags": [
+        "security",
+        "audit",
+        "malware",
+        "supply-chain",
+        "python",
+        "zero-dependencies"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code",
+        "openclaw"
+      ],
+      "added": "2026-02-18"
+    },
+    {
+      "name": "loop-bot-control",
+      "title": "---",
+      "description": "name: loop-bot-control",
+      "category": "trading",
+      "path": "skills/trading/loop-bot-control/SKILL.md",
+      "tags": [
+        "trading",
+        "bot-control",
+        "emergency-stop",
+        "range-adjustment",
+        "docker",
+        "python"
+      ],
+      "complexity": "beginner",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code",
+        "openclaw"
+      ],
+      "added": "2026-02-18"
+    },
+    {
+      "name": "risk-metrics",
+      "title": "---",
+      "description": "name: risk-metrics-calculation",
+      "category": "trading",
+      "path": "skills/trading/risk-metrics/SKILL.md",
+      "tags": [
+        "trading",
+        "risk",
+        "quant",
+        "var",
+        "sharpe",
+        "sortino",
+        "python",
+        "portfolio"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code",
+        "openclaw"
+      ],
+      "added": "2026-02-18"
+    }
+  ]
+}

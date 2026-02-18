@@ -1,0 +1,175 @@
+{
+  "library": "Kryllax Pattern Library",
+  "description": "Extracted coding patterns from all skills. Use to understand common approaches and generate new skills.",
+  "version": "1.0.0",
+  "last_updated": "2026-02-18",
+  "total_patterns": 12,
+  "patterns": [
+    {
+      "id": "P001",
+      "name": "Security Gate Pipeline",
+      "domain": "security",
+      "description": "Multi-layer code scanning: pattern detection + Bandit static analysis + syntax check. Returns PASS/WARN/BLOCK verdict.",
+      "libraries": [
+        "bandit",
+        "subprocess",
+        "ast"
+      ],
+      "seen_in": [
+        "skill-security-audit"
+      ],
+      "template": "scan \u2192 analyze \u2192 verdict \u2192 report"
+    },
+    {
+      "id": "P002",
+      "name": "Async Dead Drop Messaging",
+      "domain": "communication",
+      "description": "Zero-cost agent-to-agent messaging via JSON file on shared filesystem. Writer appends, reader polls and clears.",
+      "libraries": [
+        "json",
+        "os",
+        "datetime"
+      ],
+      "seen_in": [
+        "dead-drop"
+      ],
+      "template": "write_tagged_message \u2192 store_json \u2192 poll_and_clear"
+    },
+    {
+      "id": "P003",
+      "name": "SSH Portal Bridge",
+      "domain": "communication",
+      "description": "Direct agent-to-agent communication via SSH + Python script injection into remote container.",
+      "libraries": [
+        "paramiko",
+        "subprocess"
+      ],
+      "seen_in": [
+        "ren-portal"
+      ],
+      "template": "ssh_connect \u2192 inject_script \u2192 capture_output \u2192 parse_response"
+    },
+    {
+      "id": "P004",
+      "name": "Docker Health Monitor",
+      "domain": "infrastructure",
+      "description": "Container health checking with automatic restart on failure. Uses systemd watchdog pattern.",
+      "libraries": [
+        "subprocess",
+        "systemd"
+      ],
+      "seen_in": [
+        "vps-management"
+      ],
+      "template": "check_status \u2192 evaluate_health \u2192 restart_if_failed \u2192 notify"
+    },
+    {
+      "id": "P005",
+      "name": "Reentrancy Guard",
+      "domain": "blockchain",
+      "description": "Solidity mutex pattern to prevent reentrancy attacks. Uses bool lock state variable.",
+      "libraries": [
+        "solidity"
+      ],
+      "seen_in": [
+        "solidity-security"
+      ],
+      "template": "require(!locked) \u2192 locked=true \u2192 execute \u2192 locked=false"
+    },
+    {
+      "id": "P006",
+      "name": "AMM Constant Product",
+      "domain": "blockchain",
+      "description": "x*y=k automated market maker formula for DeFi liquidity pools.",
+      "libraries": [
+        "solidity"
+      ],
+      "seen_in": [
+        "defi-templates"
+      ],
+      "template": "reserve_x * reserve_y = k \u2192 calculate_output \u2192 update_reserves"
+    },
+    {
+      "id": "P007",
+      "name": "ERC-721 Mint Pattern",
+      "domain": "blockchain",
+      "description": "Standard NFT minting with counter, ownership mapping, and metadata URI.",
+      "libraries": [
+        "solidity",
+        "openzeppelin"
+      ],
+      "seen_in": [
+        "nft-standards"
+      ],
+      "template": "increment_counter \u2192 assign_owner \u2192 set_uri \u2192 emit_transfer"
+    },
+    {
+      "id": "P008",
+      "name": "Hardhat Test Suite",
+      "domain": "blockchain",
+      "description": "Smart contract testing with deploy fixture, expect assertions, and event checking.",
+      "libraries": [
+        "hardhat",
+        "ethers",
+        "chai"
+      ],
+      "seen_in": [
+        "web3-testing"
+      ],
+      "template": "deploy_fixture \u2192 call_function \u2192 expect_result \u2192 check_events"
+    },
+    {
+      "id": "P009",
+      "name": "Rolling VaR Calculation",
+      "domain": "trading",
+      "description": "Value at Risk using historical simulation with configurable confidence interval and lookback window.",
+      "libraries": [
+        "numpy",
+        "pandas",
+        "scipy"
+      ],
+      "seen_in": [
+        "risk-metrics"
+      ],
+      "template": "get_returns \u2192 sort_losses \u2192 percentile_cutoff \u2192 annualize"
+    },
+    {
+      "id": "P010",
+      "name": "Emergency Stop Pattern",
+      "domain": "trading",
+      "description": "Graceful bot shutdown: cancel orders \u2192 close positions \u2192 persist state \u2192 notify.",
+      "libraries": [
+        "subprocess",
+        "docker"
+      ],
+      "seen_in": [
+        "loop-bot-control"
+      ],
+      "template": "cancel_orders \u2192 close_positions \u2192 save_state \u2192 stop_container \u2192 alert"
+    },
+    {
+      "id": "P011",
+      "name": "Chain-of-Thought Prompt",
+      "domain": "ai-development",
+      "description": "Structured reasoning prompt: context \u2192 task \u2192 constraints \u2192 output format \u2192 examples.",
+      "libraries": [],
+      "seen_in": [
+        "prompt-engineering"
+      ],
+      "template": "role_definition \u2192 context \u2192 step_by_step \u2192 output_format \u2192 examples"
+    },
+    {
+      "id": "P012",
+      "name": "Confidence-Scored Instinct",
+      "domain": "ai-development",
+      "description": "Pattern promoted to instinct when confidence score exceeds threshold after N observations.",
+      "libraries": [
+        "json"
+      ],
+      "seen_in": [
+        "continuous-learning-v2"
+      ],
+      "template": "observe_pattern \u2192 score_confidence \u2192 threshold_check \u2192 promote_to_instinct"
+    }
+  ]
+}
