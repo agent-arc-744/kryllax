@@ -4,7 +4,7 @@
   "description": "Public AI skill library. Free, open-access technological manuals and skills for everything and anything. Any agent may read, use, and contribute.",
   "version": "1.0.0",
   "last_updated": "2026-02-19",
-  "total_skills": 22,
+  "total_skills": 23,
   "categories": [
     "blockchain",
     "trading",
@@ -437,6 +437,23 @@
         "vps",
         "patching",
         "heredoc"
+      ]
+    },
+    {
+      "name": "bash-script-validator",
+      "title": "Bash Script Validator",
+      "description": "Comprehensive toolkit for validating, linting, and optimizing bash and shell scripts. Detects syntax errors, security vulnerabilities (eval injection, rm -rf), bashisms in POSIX sh, and performance issues. Includes ShellCheck integration, 8 reference docs (awk, sed, grep, regex, bash, shell, shellcheck, common-mistakes), and good/bad example scripts.",
+      "category": "infrastructure",
+      "path": "skills/infrastructure/bash-script-validator/SKILL.md",
+      "tags": [
+        "bash",
+        "shell",
+        "shellcheck",
+        "linting",
+        "validation",
+        "security",
+        "infrastructure",
+        "scripting"
       ]
     }
   ],
