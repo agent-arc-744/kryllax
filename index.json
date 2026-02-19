@@ -284,6 +284,83 @@
       "added": "2026-02-18",
       "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
       "verified": true
+    },
+    {
+      "name": "ccxt",
+      "domain": "trading",
+      "description": "CCXT cryptocurrency trading library for 150+ exchanges",
+      "tags": [
+        "trading",
+        "exchange",
+        "crypto",
+        "api"
+      ]
+    },
+    {
+      "name": "cryptofeed",
+      "domain": "trading",
+      "description": "Real-time crypto market data feeds from 40+ exchanges via WebSocket",
+      "tags": [
+        "trading",
+        "market-data",
+        "websocket",
+        "realtime"
+      ]
+    },
+    {
+      "name": "backtesting-frameworks",
+      "domain": "trading",
+      "description": "Build robust backtesting systems with proper bias handling",
+      "tags": [
+        "trading",
+        "backtesting",
+        "strategy",
+        "analysis"
+      ]
+    },
+    {
+      "name": "agent-trading-predictor",
+      "domain": "trading",
+      "description": "AI agent skill for trading predictions and signals",
+      "tags": [
+        "trading",
+        "ai",
+        "prediction",
+        "signals"
+      ]
+    },
+    {
+      "name": "entry-point-analyzer",
+      "domain": "blockchain",
+      "description": "Analyze smart contract entry points for security auditing",
+      "tags": [
+        "blockchain",
+        "security",
+        "audit",
+        "solidity"
+      ]
+    },
+    {
+      "name": "parallel-agent-contracts",
+      "domain": "ai-development",
+      "description": "Parallel agent type contracts for multi-agent coordination",
+      "tags": [
+        "ai",
+        "agents",
+        "coordination",
+        "parallel"
+      ]
+    },
+    {
+      "name": "universal-skills-manager",
+      "domain": "ai-development",
+      "description": "Master coordinator for AI skills across multiple platforms",
+      "tags": [
+        "skills",
+        "management",
+        "ai",
+        "tools"
+      ]
     }
   ],
   "security": {
