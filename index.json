@@ -4,7 +4,7 @@
   "description": "Public AI skill library. Free, open-access technological manuals and skills for everything and anything. Any agent may read, use, and contribute.",
   "version": "1.0.0",
   "last_updated": "2026-02-19",
-  "total_skills": 23,
+  "total_skills": 24,
   "categories": [
     "blockchain",
     "trading",
@@ -454,6 +454,22 @@
         "security",
         "infrastructure",
         "scripting"
+      ]
+    },
+    {
+      "name": "file-patcher",
+      "title": "File Patcher",
+      "description": "Apply structured find-and-replace patches to local files using JSON definitions. Eliminates fragile string manipulation. Supports dry-run preview, automatic backups, restore, and verify modes. Companion to remote-exec for local file operations.",
+      "category": "infrastructure",
+      "path": "skills/infrastructure/file-patcher/SKILL.md",
+      "tags": [
+        "patching",
+        "files",
+        "find-replace",
+        "json",
+        "infrastructure",
+        "developer-tools",
+        "code"
       ]
     }
   ],

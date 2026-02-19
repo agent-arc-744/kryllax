@@ -1,0 +1,10 @@
+[
+  {
+    "file": "/path/to/your/script.py",
+    "find": "old_function_name",
+    "replace": "new_function_name",
+    "backup": true,
+    "count": 1,
+    "description": "Rename a function"
+  }
+]

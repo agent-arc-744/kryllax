@@ -1,0 +1,23 @@
+[
+  {
+    "file": "/app/bot/commands.py",
+    "find": "TIMEOUT = 10",
+    "replace": "TIMEOUT = 30",
+    "backup": true,
+    "description": "Increase command timeout"
+  },
+  {
+    "file": "/app/bot/engine.py",
+    "find": "log.info('Starting')",
+    "replace": "log.info('Engine starting v2')",
+    "backup": true,
+    "description": "Update startup log message"
+  },
+  {
+    "file": "/app/config.yaml",
+    "find": "paper_trading: false",
+    "replace": "paper_trading: true",
+    "backup": true,
+    "description": "Switch to paper trading mode"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "file": "/etc/myapp/config.ini",
+    "find": "debug = false",
+    "replace": "debug = true",
+    "backup": true,
+    "count": 1,
+    "description": "Enable debug mode"
+  },
+  {
+    "file": "/etc/myapp/config.ini",
+    "find": "max_connections = 10",
+    "replace": "max_connections = 50",
+    "backup": false,
+    "description": "Increase connection pool"
+  }
+]
