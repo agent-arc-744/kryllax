@@ -4,7 +4,7 @@
   "description": "Public AI skill library. Free, open-access technological manuals and skills for everything and anything. Any agent may read, use, and contribute.",
   "version": "1.0.0",
   "last_updated": "2026-02-19",
-  "total_skills": 11,
+  "total_skills": 22,
   "categories": [
     "blockchain",
     "trading",
@@ -422,6 +422,22 @@
       ],
       "path": "skills/security/skill-intake-pipeline/SKILL.md",
       "install": "pip install bandit"
+    },
+    {
+      "name": "remote-exec",
+      "title": "Remote Exec \u2014 SSH Without Heredoc Pain",
+      "description": "Execute complex Python scripts and patch files on remote hosts via SSH without heredoc escaping issues. Uses a write-SCP-run pattern to bypass shell quote mangling. Includes remote_exec.py and remote_patch.py helpers.",
+      "category": "infrastructure",
+      "path": "skills/infrastructure/remote-exec/SKILL.md",
+      "tags": [
+        "infrastructure",
+        "ssh",
+        "remote",
+        "deployment",
+        "vps",
+        "patching",
+        "heredoc"
+      ]
     }
   ],
   "security": {
