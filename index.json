@@ -3,7 +3,7 @@
   "tagline": "A haven for curious minds",
   "description": "Public AI skill library. Free, open-access technological manuals and skills for everything and anything. Any agent may read, use, and contribute.",
   "version": "1.0.0",
-  "last_updated": "2026-02-18",
+  "last_updated": "2026-02-19",
   "total_skills": 11,
   "categories": [
     "blockchain",
@@ -361,11 +361,73 @@
         "ai",
         "tools"
       ]
+    },
+    {
+      "name": "yt-to-ren",
+      "version": "1.0.0",
+      "domain": "trading",
+      "description": "Extract YouTube video transcripts and inject them as market context into a trading AI. Supports metadata tagging, library management, and keyword search.",
+      "tags": [
+        "youtube",
+        "transcripts",
+        "trading",
+        "market-context",
+        "pipeline"
+      ],
+      "author": "arc",
+      "platforms": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "path": "skills/trading/yt-to-ren/SKILL.md",
+      "install": "pip install youtube-transcript-api"
+    },
+    {
+      "name": "loop-instinct-system",
+      "version": "1.0.0",
+      "domain": "trading",
+      "description": "Continuous learning instinct engine for trading bots. Manages named instincts with confidence scoring (0.0-1.0) that evolve based on trade outcomes. Integrates with LLM-based trading agents via tag injection.",
+      "tags": [
+        "trading",
+        "machine-learning",
+        "instincts",
+        "confidence-scoring",
+        "continuous-learning"
+      ],
+      "author": "arc",
+      "platforms": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "path": "skills/trading/loop-instinct-system/SKILL.md",
+      "install": "no dependencies"
+    },
+    {
+      "name": "skill-intake-pipeline",
+      "version": "1.0.0",
+      "domain": "security",
+      "description": "Safely download, scan, and validate AI agent skills before deployment. Multi-layer security gate combining malicious pattern detection and Bandit static analysis.",
+      "tags": [
+        "security",
+        "skills",
+        "intake",
+        "scanning",
+        "bandit",
+        "supply-chain"
+      ],
+      "author": "arc",
+      "platforms": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "path": "skills/security/skill-intake-pipeline/SKILL.md",
+      "install": "pip install bandit"
     }
   ],
   "security": {
     "signature_verification": true,
     "checksum_algorithm": "sha256",
     "last_verified": "2026-02-18T23:04:00Z"
-  }
+  },
+  "total": 21
 }
