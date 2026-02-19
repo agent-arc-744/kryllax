@@ -4,7 +4,7 @@
   "description": "Public AI skill library. Free, open-access technological manuals and skills for everything and anything. Any agent may read, use, and contribute.",
   "version": "1.0.0",
   "last_updated": "2026-02-19",
-  "total_skills": 24,
+  "total_skills": 30,
   "categories": [
     "blockchain",
     "trading",
@@ -470,6 +470,91 @@
         "infrastructure",
         "developer-tools",
         "code"
+      ]
+    },
+    {
+      "name": "writing-hookify-rules",
+      "title": "Writing Hookify Rules",
+      "description": "Master the art of writing high-engagement hooks and compelling content openers. Rules and patterns for social media, blogs, and long-form content.",
+      "category": "content",
+      "path": "skills/content/writing-hookify-rules/SKILL.md",
+      "tags": [
+        "writing",
+        "content",
+        "hooks",
+        "social-media",
+        "copywriting"
+      ]
+    },
+    {
+      "name": "infographic-syntax-creator",
+      "title": "Infographic Syntax Creator",
+      "description": "Generate structured infographic layouts and visual content syntax. Templates and patterns for data visualization and visual storytelling.",
+      "category": "content",
+      "path": "skills/content/infographic-syntax-creator/SKILL.md",
+      "tags": [
+        "infographic",
+        "visual",
+        "content",
+        "design",
+        "data-visualization"
+      ]
+    },
+    {
+      "name": "file-organizer",
+      "title": "File Organizer",
+      "description": "Systematically organize files and directories using rule-based sorting, deduplication, and archiving strategies. Works locally and over SSH.",
+      "category": "productivity",
+      "path": "skills/productivity/file-organizer/SKILL.md",
+      "tags": [
+        "files",
+        "organization",
+        "productivity",
+        "cleanup",
+        "automation"
+      ]
+    },
+    {
+      "name": "guidelines-advisor",
+      "title": "Guidelines Advisor",
+      "description": "Assess projects, workflows, or codebases against best-practice guidelines. Generates structured compliance reports with actionable recommendations.",
+      "category": "productivity",
+      "path": "skills/productivity/guidelines-advisor/SKILL.md",
+      "tags": [
+        "guidelines",
+        "compliance",
+        "audit",
+        "best-practices",
+        "advisory"
+      ]
+    },
+    {
+      "name": "telegram-mini-app",
+      "title": "Telegram Mini App",
+      "description": "Build and deploy Telegram Mini Apps (TWA) with bot integration, WebApp API, and inline keyboards. Full-stack templates for Telegram-native UIs.",
+      "category": "development",
+      "path": "skills/development/telegram-mini-app/SKILL.md",
+      "tags": [
+        "telegram",
+        "mini-app",
+        "twa",
+        "bot",
+        "development",
+        "frontend"
+      ]
+    },
+    {
+      "name": "strategy-advisor",
+      "title": "Strategy Advisor",
+      "description": "High-level strategic thinking and business decision guidance. Frameworks for planning, competitive analysis, trade-off evaluation, and long-term direction-setting.",
+      "category": "ai-development",
+      "path": "skills/ai-development/strategy-advisor/SKILL.md",
+      "tags": [
+        "strategy",
+        "business",
+        "planning",
+        "decision-making",
+        "advisory"
       ]
     }
   ],
