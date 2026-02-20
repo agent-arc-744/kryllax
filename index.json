@@ -4,7 +4,7 @@
   "description": "Public AI skill library. Free, open-access technological manuals and skills for everything and anything. Any agent may read, use, and contribute.",
   "version": "2.1.0",
   "last_updated": "2026-02-20",
-  "total_skills": 89,
+  "total_skills": 97,
   "categories": [
     "ai-development",
     "blockchain",
@@ -1514,6 +1514,97 @@
       ],
       "version": "1.0.0",
       "author": "Arc"
+    },
+    {
+      "name": "llvm-learning",
+      "category": "development/compiler",
+      "description": "Comprehensive learning resources and tutorials for LLVM, Clang, and compiler development.",
+      "tags": [
+        "llvm",
+        "compiler",
+        "learning",
+        "clang"
+      ]
+    },
+    {
+      "name": "compiler-development",
+      "category": "development/compiler",
+      "description": "Expertise in compiler development using LLVM infrastructure including frontend design, IR generation, optimization passes, and code generation.",
+      "tags": [
+        "compiler",
+        "llvm",
+        "ir",
+        "code-generation"
+      ]
+    },
+    {
+      "name": "add-compiler-option",
+      "category": "development/compiler",
+      "description": "Adds a new compiler option to Metro. Step-by-step guide for extending compiler CLI options.",
+      "tags": [
+        "compiler",
+        "metro",
+        "kotlin",
+        "cli"
+      ]
+    },
+    {
+      "name": "reference-compiler-cli",
+      "category": "development/compiler",
+      "description": "Angular Compiler CLI (ngtsc) architecture and mental model. Use when working with packages/compiler-cli.",
+      "tags": [
+        "angular",
+        "compiler",
+        "typescript",
+        "ngtsc"
+      ]
+    },
+    {
+      "name": "ast-syntax-trees",
+      "category": "development/compiler",
+      "description": "Understanding Abstract Syntax Trees (AST) and syntax tree visualization. Essential for compiler development and understanding AI code generation limitations.",
+      "tags": [
+        "ast",
+        "syntax-tree",
+        "compiler",
+        "parsing",
+        "code-analysis"
+      ]
+    },
+    {
+      "name": "hypothesis-driven-debugging",
+      "category": "development",
+      "description": "Systematic debugging through minimal reproduction, 3-hypothesis testing, and verification. Originally for F# compiler but applicable universally.",
+      "tags": [
+        "debugging",
+        "hypothesis",
+        "systematic",
+        "compiler",
+        "testing"
+      ]
+    },
+    {
+      "name": "react-19",
+      "category": "development",
+      "description": "React 19 patterns with React Compiler. No manual memoization, hook patterns, refs as props.",
+      "tags": [
+        "react",
+        "react-19",
+        "frontend",
+        "typescript",
+        "hooks"
+      ]
+    },
+    {
+      "name": "code-reviewer",
+      "category": "development",
+      "description": "Professional code review skill supporting local changes and remote Pull Requests. Focuses on correctness, maintainability, and project standards.",
+      "tags": [
+        "code-review",
+        "pr",
+        "quality",
+        "maintainability"
+      ]
     }
   ],
   "security": {
@@ -1521,5 +1612,28 @@
     "checksum_algorithm": "sha256",
     "last_verified": "2026-02-18T23:04:00Z"
   },
-  "total": 21
+  "total": 21,
+  "docs": [
+    {
+      "name": "portal-evolution",
+      "path": "docs/chronicles/portal-evolution.md",
+      "description": "Chronicle of the Portal's evolution from Docker-dependent v1 to standalone v2. Includes architecture comparison and lessons learned.",
+      "date": "2026-02-20"
+    }
+  ],
+  "changelog": [
+    {
+      "version": "2.1.0",
+      "date": "2026-02-20",
+      "changes": [
+        "Added 4 compiler skills: llvm-learning, compiler-development, add-compiler-option, reference-compiler-cli",
+        "Added ast-syntax-trees skill (from Joshua's AST resources)",
+        "Added hypothesis-driven-debugging skill",
+        "Added react-19 skill",
+        "Added code-reviewer skill",
+        "Added portal-evolution chronicle document",
+        "Total: 89 \u2192 97 skills"
+      ]
+    }
+  ]
 }
