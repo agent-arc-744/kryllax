@@ -2,16 +2,19 @@
   "library": "Kryllax",
   "tagline": "A haven for curious minds",
   "description": "Public AI skill library. Free, open-access technological manuals and skills for everything and anything. Any agent may read, use, and contribute.",
-  "version": "1.0.0",
-  "last_updated": "2026-02-19",
-  "total_skills": 30,
+  "version": "2.0.0",
+  "last_updated": "2026-02-20",
+  "total_skills": 84,
   "categories": [
-    "blockchain",
-    "trading",
-    "infrastructure",
-    "security",
     "ai-development",
-    "communication"
+    "blockchain",
+    "communication",
+    "content",
+    "development",
+    "infrastructure",
+    "productivity",
+    "security",
+    "trading"
   ],
   "repository": "https://github.com/agent-arc-744/kryllax",
   "bootstrap": "https://raw.githubusercontent.com/agent-arc-744/kryllax/main/bootstrap.sh",
@@ -19,543 +22,1432 @@
   "license": "CC0 - Public Domain",
   "skills": [
     {
+      "name": "braintrust-tracing",
+      "title": "braintrust-tracing",
+      "description": "Braintrust tracing for Claude Code - hook architecture, sub-agent correlation, debugging",
+      "category": "ai-development",
+      "path": "skills/ai-development/braintrust-tracing/SKILL.md",
+      "tags": [
+        "ai-development",
+        "braintrust tracing"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "create-skill",
+      "title": "\"create-skill\"",
+      "description": "\"Wizard for creating new Agent Zero skills. Guides users through creating well-structured SKILL.md f",
+      "category": "ai-development",
+      "path": "skills/ai-development/create-skill/SKILL.md",
+      "tags": [
+        "ai-development",
+        "create skill"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "memory-keeper",
+      "title": "memory-keeper",
+      "description": "Copy and snapshot all important agent context (MEMORY.md, memory/*.md, AGENTS.md, SOUL.md, etc.) int",
+      "category": "ai-development",
+      "path": "skills/ai-development/memory-keeper/SKILL.md",
+      "tags": [
+        "ai-development",
+        "memory keeper"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "senior-prompt-engineer",
+      "title": "senior-prompt-engineer",
+      "description": "World-class prompt engineering skill for LLM optimization, prompt patterns, structured outputs, and ",
+      "category": "ai-development",
+      "path": "skills/ai-development/senior-prompt-engineer/SKILL.md",
+      "tags": [
+        "ai-development",
+        "senior prompt engineer"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "strategy-advisor",
+      "title": "strategy-advisor",
+      "description": "|",
+      "category": "ai-development",
+      "path": "skills/ai-development/strategy-advisor/SKILL.md",
+      "tags": [
+        "ai-development",
+        "strategy advisor"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "building-recommendation-systems",
+      "title": "building-recommendation-systems",
+      "description": "|",
+      "category": "ai-development",
+      "path": "skills/ai-development/building-recommendation-systems/SKILL.md",
+      "tags": [
+        "ai-development",
+        "building recommendation systems"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "claude-code-guide",
+      "title": "Claude Code Guide",
+      "description": "Master guide for using Claude Code effectively. Includes configuration templates, prompting strategi",
+      "category": "ai-development",
+      "path": "skills/ai-development/claude-code-guide/SKILL.md",
+      "tags": [
+        "ai-development",
+        "claude code guide"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
       "name": "prompt-engineering",
-      "title": "---",
-      "description": "name: prompt-engineering-patterns",
+      "title": "prompt-engineering-patterns",
+      "description": "Master advanced prompt engineering techniques to maximize LLM performance, reliability, and controll",
       "category": "ai-development",
       "path": "skills/ai-development/prompt-engineering/SKILL.md",
       "tags": [
         "ai-development",
-        "prompt-engineering",
-        "llm",
-        "production",
-        "python"
+        "prompt engineering"
       ],
       "complexity": "intermediate",
       "compatible_with": [
         "agent-zero",
-        "claude-code",
-        "openclaw"
+        "claude-code"
       ],
-      "added": "2026-02-18",
-      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
-      "verified": true
+      "added": "2026-02-20"
     },
     {
-      "name": "defi-templates",
-      "title": "---",
-      "description": "name: defi-protocol-templates",
-      "category": "blockchain",
-      "path": "skills/blockchain/defi-templates/SKILL.md",
+      "name": "context7-auto-research",
+      "title": "context7-auto-research",
+      "description": "Automatically fetch latest library/framework documentation for Claude Code via Context7 API",
+      "category": "ai-development",
+      "path": "skills/ai-development/context7-auto-research/SKILL.md",
       "tags": [
-        "blockchain",
-        "defi",
-        "solidity",
-        "staking",
-        "amm",
-        "governance",
-        "lending",
-        "ethereum"
-      ],
-      "complexity": "advanced",
-      "compatible_with": [
-        "agent-zero",
-        "claude-code",
-        "openclaw"
-      ],
-      "added": "2026-02-18",
-      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
-      "verified": true
-    },
-    {
-      "name": "nft-standards",
-      "title": "---",
-      "description": "name: nft-standards",
-      "category": "blockchain",
-      "path": "skills/blockchain/nft-standards/SKILL.md",
-      "tags": [
-        "blockchain",
-        "nft",
-        "erc-721",
-        "erc-1155",
-        "solidity",
-        "marketplace",
-        "ethereum"
+        "ai-development",
+        "context7 auto research"
       ],
       "complexity": "intermediate",
       "compatible_with": [
         "agent-zero",
-        "claude-code",
-        "openclaw"
+        "claude-code"
       ],
-      "added": "2026-02-18",
-      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
-      "verified": true
+      "added": "2026-02-20"
     },
     {
-      "name": "solidity-security",
-      "title": "---",
-      "description": "name: solidity-security",
-      "category": "blockchain",
-      "path": "skills/blockchain/solidity-security/SKILL.md",
+      "name": "parallel-agent-contracts",
+      "title": "parallel-agent-contracts",
+      "description": "Parallel Agent Type Contracts",
+      "category": "ai-development",
+      "path": "skills/ai-development/parallel-agent-contracts/SKILL.md",
       "tags": [
-        "blockchain",
-        "solidity",
+        "ai-development",
+        "parallel agent contracts"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "skill-writer",
+      "title": "skill-writer",
+      "description": "Guide users through creating Agent Skills for Claude Code. Use when the user wants to create, write,",
+      "category": "ai-development",
+      "path": "skills/ai-development/skill-writer/SKILL.md",
+      "tags": [
+        "ai-development",
+        "skill writer"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "skill-seekers",
+      "title": "skill-seekers",
+      "description": "\"-Automatically convert documentation websites, GitHub repositories, and PDFs into Claude AI skills ",
+      "category": "ai-development",
+      "path": "skills/ai-development/skill-seekers/SKILL.md",
+      "tags": [
+        "ai-development",
+        "skill seekers"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "1k-new-skill",
+      "title": "1k-new-skill",
+      "description": "Creates a new Claude Code Skill following best practices. Use when the user wants to create a new sk",
+      "category": "ai-development",
+      "path": "skills/ai-development/1k-new-skill/SKILL.md",
+      "tags": [
+        "ai-development",
+        "1k new skill"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "llm-prompt-engineering",
+      "title": "prompt-engineering-patterns",
+      "description": "Master advanced prompt engineering techniques to maximize LLM performance, reliability, and controll",
+      "category": "ai-development",
+      "path": "skills/ai-development/llm-prompt-engineering/SKILL.md",
+      "tags": [
+        "ai-development",
+        "llm prompt engineering"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "handoff",
+      "title": "handoff",
+      "description": ">",
+      "category": "ai-development",
+      "path": "skills/ai-development/handoff/SKILL.md",
+      "tags": [
+        "ai-development",
+        "handoff"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "universal-skills-manager",
+      "title": "universal-skills-manager",
+      "description": "\"The master coordinator for AI skills. Discovers skills from multiple sources (SkillsMP.com, SkillHu",
+      "category": "ai-development",
+      "path": "skills/ai-development/universal-skills-manager/SKILL.md",
+      "tags": [
+        "ai-development",
+        "universal skills manager"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "continuous-learning-v2",
+      "title": "continuous-learning-v2",
+      "description": "Instinct-based learning system that observes sessions via hooks, creates atomic instincts with confi",
+      "category": "ai-development",
+      "path": "skills/ai-development/continuous-learning-v2/SKILL.md",
+      "tags": [
+        "ai-development",
+        "continuous learning v2"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "scanning-container-security",
+      "title": "Scanning Container Security",
+      "description": "|",
+      "category": "security",
+      "path": "skills/security/scanning-container-security/SKILL.md",
+      "tags": [
         "security",
-        "smart-contracts",
-        "ethereum",
-        "python"
-      ],
-      "complexity": "advanced",
-      "compatible_with": [
-        "agent-zero",
-        "claude-code",
-        "openclaw"
-      ],
-      "added": "2026-02-18",
-      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
-      "verified": true
-    },
-    {
-      "name": "web3-testing",
-      "title": "---",
-      "description": "name: web3-testing",
-      "category": "blockchain",
-      "path": "skills/blockchain/web3-testing/SKILL.md",
-      "tags": [
-        "blockchain",
-        "testing",
-        "hardhat",
-        "foundry",
-        "solidity",
-        "smart-contracts"
+        "scanning container security"
       ],
       "complexity": "intermediate",
       "compatible_with": [
         "agent-zero",
-        "claude-code",
-        "openclaw"
+        "claude-code"
       ],
-      "added": "2026-02-18",
-      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
-      "verified": true
+      "added": "2026-02-20"
     },
     {
-      "name": "dead-drop",
-      "title": "---",
-      "description": "name: dead-drop",
-      "category": "communication",
-      "path": "skills/communication/dead-drop/SKILL.md",
+      "name": "cross-site-scripting-and-html-injection-testing",
+      "title": "Cross-Site Scripting and HTML Injection Testing",
+      "description": "This skill should be used when the user asks to \"test for XSS vulnerabilities\", \"perform cross-site ",
+      "category": "security",
+      "path": "skills/security/cross-site-scripting-and-html-injection-testing/SKILL.md",
       "tags": [
-        "communication",
-        "async",
-        "zero-cost",
-        "messaging",
-        "json",
-        "python"
-      ],
-      "complexity": "beginner",
-      "compatible_with": [
-        "agent-zero",
-        "claude-code",
-        "openclaw"
-      ],
-      "added": "2026-02-18",
-      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
-      "verified": true
-    },
-    {
-      "name": "ren-portal",
-      "title": "---",
-      "description": "name: ren-portal",
-      "category": "communication",
-      "path": "skills/communication/ren-portal/SKILL.md",
-      "tags": [
-        "communication",
-        "agent-to-agent",
-        "portal",
-        "ssh",
-        "python"
+        "security",
+        "cross site scripting and html injection testing"
       ],
       "complexity": "intermediate",
       "compatible_with": [
         "agent-zero",
-        "claude-code",
-        "openclaw"
+        "claude-code"
       ],
-      "added": "2026-02-18",
-      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
-      "verified": true
+      "added": "2026-02-20"
     },
     {
-      "name": "vps-management",
-      "title": "---",
-      "description": "name: vps-management",
-      "category": "infrastructure",
-      "path": "skills/infrastructure/vps-management/SKILL.md",
+      "name": "skill-intake-pipeline",
+      "title": "skill-intake-pipeline",
+      "description": "Safely download, scan, and validate AI agent skills before deployment. Multi-layer security gate com",
+      "category": "security",
+      "path": "skills/security/skill-intake-pipeline/SKILL.md",
       "tags": [
-        "infrastructure",
-        "vps",
-        "ssh",
-        "docker",
-        "digitalocean",
-        "bash"
+        "security",
+        "skill intake pipeline"
       ],
-      "complexity": "beginner",
+      "complexity": "intermediate",
       "compatible_with": [
         "agent-zero",
-        "claude-code",
-        "openclaw"
+        "claude-code"
       ],
-      "added": "2026-02-18",
-      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
-      "verified": true
+      "added": "2026-02-20"
+    },
+    {
+      "name": "memory-forensics",
+      "title": "memory-forensics",
+      "description": "Master memory forensics techniques including memory acquisition, process analysis, and artifact extr",
+      "category": "security",
+      "path": "skills/security/memory-forensics/SKILL.md",
+      "tags": [
+        "security",
+        "memory forensics"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "fuzzing-apis",
+      "title": "fuzzing-apis",
+      "description": "|",
+      "category": "security",
+      "path": "skills/security/fuzzing-apis/SKILL.md",
+      "tags": [
+        "security",
+        "fuzzing apis"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "protocol-reverse-engineering",
+      "title": "protocol-reverse-engineering",
+      "description": "Master network protocol reverse engineering including packet analysis, protocol dissection, and cust",
+      "category": "security",
+      "path": "skills/security/protocol-reverse-engineering/SKILL.md",
+      "tags": [
+        "security",
+        "protocol reverse engineering"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
     },
     {
       "name": "skill-security-audit",
-      "title": "---",
-      "description": "name: skill-security-audit",
+      "title": "skill-security-audit",
+      "description": "Detect malicious patterns in AI Agent skills \u2014 13 detectors for backdoors, credential theft, data ex",
       "category": "security",
       "path": "skills/security/skill-security-audit/SKILL.md",
       "tags": [
         "security",
-        "audit",
-        "malware",
-        "supply-chain",
-        "python",
-        "zero-dependencies"
+        "skill security audit"
       ],
       "complexity": "intermediate",
       "compatible_with": [
         "agent-zero",
-        "claude-code",
-        "openclaw"
-      ],
-      "added": "2026-02-18",
-      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
-      "verified": true
-    },
-    {
-      "name": "loop-bot-control",
-      "title": "---",
-      "description": "name: loop-bot-control",
-      "category": "trading",
-      "path": "skills/trading/loop-bot-control/SKILL.md",
-      "tags": [
-        "trading",
-        "bot-control",
-        "emergency-stop",
-        "range-adjustment",
-        "docker",
-        "python"
-      ],
-      "complexity": "beginner",
-      "compatible_with": [
-        "agent-zero",
-        "claude-code",
-        "openclaw"
-      ],
-      "added": "2026-02-18",
-      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
-      "verified": true
-    },
-    {
-      "name": "risk-metrics",
-      "title": "---",
-      "description": "name: risk-metrics-calculation",
-      "category": "trading",
-      "path": "skills/trading/risk-metrics/SKILL.md",
-      "tags": [
-        "trading",
-        "risk",
-        "quant",
-        "var",
-        "sharpe",
-        "sortino",
-        "python",
-        "portfolio"
-      ],
-      "complexity": "intermediate",
-      "compatible_with": [
-        "agent-zero",
-        "claude-code",
-        "openclaw"
-      ],
-      "added": "2026-02-18",
-      "sha256": "11debd7d6ed05ddbae13077f985dee7186bae11e0d032d84767641dee6106a05",
-      "verified": true
-    },
-    {
-      "name": "ccxt",
-      "domain": "trading",
-      "description": "CCXT cryptocurrency trading library for 150+ exchanges",
-      "tags": [
-        "trading",
-        "exchange",
-        "crypto",
-        "api"
-      ]
-    },
-    {
-      "name": "cryptofeed",
-      "domain": "trading",
-      "description": "Real-time crypto market data feeds from 40+ exchanges via WebSocket",
-      "tags": [
-        "trading",
-        "market-data",
-        "websocket",
-        "realtime"
-      ]
-    },
-    {
-      "name": "backtesting-frameworks",
-      "domain": "trading",
-      "description": "Build robust backtesting systems with proper bias handling",
-      "tags": [
-        "trading",
-        "backtesting",
-        "strategy",
-        "analysis"
-      ]
-    },
-    {
-      "name": "agent-trading-predictor",
-      "domain": "trading",
-      "description": "AI agent skill for trading predictions and signals",
-      "tags": [
-        "trading",
-        "ai",
-        "prediction",
-        "signals"
-      ]
-    },
-    {
-      "name": "entry-point-analyzer",
-      "domain": "blockchain",
-      "description": "Analyze smart contract entry points for security auditing",
-      "tags": [
-        "blockchain",
-        "security",
-        "audit",
-        "solidity"
-      ]
-    },
-    {
-      "name": "parallel-agent-contracts",
-      "domain": "ai-development",
-      "description": "Parallel agent type contracts for multi-agent coordination",
-      "tags": [
-        "ai",
-        "agents",
-        "coordination",
-        "parallel"
-      ]
-    },
-    {
-      "name": "universal-skills-manager",
-      "domain": "ai-development",
-      "description": "Master coordinator for AI skills across multiple platforms",
-      "tags": [
-        "skills",
-        "management",
-        "ai",
-        "tools"
-      ]
-    },
-    {
-      "name": "yt-to-ren",
-      "version": "1.0.0",
-      "domain": "trading",
-      "description": "Extract YouTube video transcripts and inject them as market context into a trading AI. Supports metadata tagging, library management, and keyword search.",
-      "tags": [
-        "youtube",
-        "transcripts",
-        "trading",
-        "market-context",
-        "pipeline"
-      ],
-      "author": "arc",
-      "platforms": [
-        "agent-zero",
         "claude-code"
       ],
-      "path": "skills/trading/yt-to-ren/SKILL.md",
-      "install": "pip install youtube-transcript-api"
-    },
-    {
-      "name": "loop-instinct-system",
-      "version": "1.0.0",
-      "domain": "trading",
-      "description": "Continuous learning instinct engine for trading bots. Manages named instincts with confidence scoring (0.0-1.0) that evolve based on trade outcomes. Integrates with LLM-based trading agents via tag injection.",
-      "tags": [
-        "trading",
-        "machine-learning",
-        "instincts",
-        "confidence-scoring",
-        "continuous-learning"
-      ],
-      "author": "arc",
-      "platforms": [
-        "agent-zero",
-        "claude-code"
-      ],
-      "path": "skills/trading/loop-instinct-system/SKILL.md",
-      "install": "no dependencies"
-    },
-    {
-      "name": "skill-intake-pipeline",
-      "version": "1.0.0",
-      "domain": "security",
-      "description": "Safely download, scan, and validate AI agent skills before deployment. Multi-layer security gate combining malicious pattern detection and Bandit static analysis.",
-      "tags": [
-        "security",
-        "skills",
-        "intake",
-        "scanning",
-        "bandit",
-        "supply-chain"
-      ],
-      "author": "arc",
-      "platforms": [
-        "agent-zero",
-        "claude-code"
-      ],
-      "path": "skills/security/skill-intake-pipeline/SKILL.md",
-      "install": "pip install bandit"
+      "added": "2026-02-20"
     },
     {
       "name": "remote-exec",
-      "title": "Remote Exec \u2014 SSH Without Heredoc Pain",
-      "description": "Execute complex Python scripts and patch files on remote hosts via SSH without heredoc escaping issues. Uses a write-SCP-run pattern to bypass shell quote mangling. Includes remote_exec.py and remote_patch.py helpers.",
+      "title": "remote-exec",
+      "description": "Execute complex scripts and patch files on remote hosts via SSH without heredoc escaping issues. Sol",
       "category": "infrastructure",
       "path": "skills/infrastructure/remote-exec/SKILL.md",
       "tags": [
         "infrastructure",
-        "ssh",
-        "remote",
-        "deployment",
-        "vps",
-        "patching",
-        "heredoc"
-      ]
+        "remote exec"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
     },
     {
       "name": "bash-script-validator",
-      "title": "Bash Script Validator",
-      "description": "Comprehensive toolkit for validating, linting, and optimizing bash and shell scripts. Detects syntax errors, security vulnerabilities (eval injection, rm -rf), bashisms in POSIX sh, and performance issues. Includes ShellCheck integration, 8 reference docs (awk, sed, grep, regex, bash, shell, shellcheck, common-mistakes), and good/bad example scripts.",
+      "title": "bash-script-validator",
+      "description": "Comprehensive toolkit for validating, linting, and optimizing bash and shell scripts. Use this skill",
       "category": "infrastructure",
       "path": "skills/infrastructure/bash-script-validator/SKILL.md",
       "tags": [
-        "bash",
-        "shell",
-        "shellcheck",
-        "linting",
-        "validation",
-        "security",
         "infrastructure",
-        "scripting"
-      ]
+        "bash script validator"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "collecting-infrastructure-metrics",
+      "title": "collecting-infrastructure-metrics",
+      "description": "|",
+      "category": "infrastructure",
+      "path": "skills/infrastructure/collecting-infrastructure-metrics/SKILL.md",
+      "tags": [
+        "infrastructure",
+        "collecting infrastructure metrics"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "vps-management",
+      "title": "vps-management",
+      "description": "Manage the loop-bot DigitalOcean VPS at 68.183.75.152. Handles SSH key setup, container health check",
+      "category": "infrastructure",
+      "path": "skills/infrastructure/vps-management/SKILL.md",
+      "tags": [
+        "infrastructure",
+        "vps management"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "browser",
+      "title": "browser",
+      "description": "Web browser automation with AI-optimized snapshots for claude-flow agents",
+      "category": "infrastructure",
+      "path": "skills/infrastructure/browser/SKILL.md",
+      "tags": [
+        "infrastructure",
+        "browser"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "optimizing-cache-performance",
+      "title": "optimizing-cache-performance",
+      "description": "|",
+      "category": "infrastructure",
+      "path": "skills/infrastructure/optimizing-cache-performance/SKILL.md",
+      "tags": [
+        "infrastructure",
+        "optimizing cache performance"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "performance-analysis",
+      "title": "performance-analysis",
+      "description": "Comprehensive performance analysis, bottleneck detection, and optimization recommendations for Claud",
+      "category": "infrastructure",
+      "path": "skills/infrastructure/performance-analysis/SKILL.md",
+      "tags": [
+        "infrastructure",
+        "performance analysis"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "shellcheck-configuration",
+      "title": "shellcheck-configuration",
+      "description": "Master ShellCheck static analysis configuration and usage for shell script quality. Use when setting",
+      "category": "infrastructure",
+      "path": "skills/infrastructure/shellcheck-configuration/SKILL.md",
+      "tags": [
+        "infrastructure",
+        "shellcheck configuration"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
     },
     {
       "name": "file-patcher",
-      "title": "File Patcher",
-      "description": "Apply structured find-and-replace patches to local files using JSON definitions. Eliminates fragile string manipulation. Supports dry-run preview, automatic backups, restore, and verify modes. Companion to remote-exec for local file operations.",
+      "title": "file-patcher",
+      "description": "Apply structured find-and-replace patches to local files using JSON definitions. Eliminates fragile ",
       "category": "infrastructure",
       "path": "skills/infrastructure/file-patcher/SKILL.md",
       "tags": [
-        "patching",
-        "files",
-        "find-replace",
-        "json",
         "infrastructure",
-        "developer-tools",
-        "code"
-      ]
+        "file patcher"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
     },
     {
-      "name": "writing-hookify-rules",
-      "title": "Writing Hookify Rules",
-      "description": "Master the art of writing high-engagement hooks and compelling content openers. Rules and patterns for social media, blogs, and long-form content.",
-      "category": "content",
-      "path": "skills/content/writing-hookify-rules/SKILL.md",
+      "name": "generating-docker-compose-files",
+      "title": "Generating Docker Compose Files",
+      "description": "|",
+      "category": "infrastructure",
+      "path": "skills/infrastructure/generating-docker-compose-files/SKILL.md",
       "tags": [
-        "writing",
-        "content",
-        "hooks",
-        "social-media",
-        "copywriting"
-      ]
+        "infrastructure",
+        "generating docker compose files"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
     },
     {
-      "name": "infographic-syntax-creator",
-      "title": "Infographic Syntax Creator",
-      "description": "Generate structured infographic layouts and visual content syntax. Templates and patterns for data visualization and visual storytelling.",
-      "category": "content",
-      "path": "skills/content/infographic-syntax-creator/SKILL.md",
+      "name": "nft-standards",
+      "title": "nft-standards",
+      "description": "Implement NFT standards (ERC-721, ERC-1155) with proper metadata handling, minting strategies, and m",
+      "category": "blockchain",
+      "path": "skills/blockchain/nft-standards/SKILL.md",
       "tags": [
-        "infographic",
-        "visual",
-        "content",
-        "design",
-        "data-visualization"
-      ]
+        "blockchain",
+        "nft standards"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
     },
     {
-      "name": "file-organizer",
-      "title": "File Organizer",
-      "description": "Systematically organize files and directories using rule-based sorting, deduplication, and archiving strategies. Works locally and over SSH.",
-      "category": "productivity",
-      "path": "skills/productivity/file-organizer/SKILL.md",
+      "name": "web3-testing",
+      "title": "web3-testing",
+      "description": "Test smart contracts comprehensively using Hardhat and Foundry with unit tests, integration tests, a",
+      "category": "blockchain",
+      "path": "skills/blockchain/web3-testing/SKILL.md",
       "tags": [
-        "files",
-        "organization",
-        "productivity",
-        "cleanup",
-        "automation"
-      ]
+        "blockchain",
+        "web3 testing"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
     },
     {
-      "name": "guidelines-advisor",
-      "title": "Guidelines Advisor",
-      "description": "Assess projects, workflows, or codebases against best-practice guidelines. Generates structured compliance reports with actionable recommendations.",
-      "category": "productivity",
-      "path": "skills/productivity/guidelines-advisor/SKILL.md",
+      "name": "defi-templates",
+      "title": "defi-protocol-templates",
+      "description": "Implement DeFi protocols with production-ready templates for staking, AMMs, governance, and lending ",
+      "category": "blockchain",
+      "path": "skills/blockchain/defi-templates/SKILL.md",
       "tags": [
-        "guidelines",
-        "compliance",
-        "audit",
-        "best-practices",
-        "advisory"
-      ]
+        "blockchain",
+        "defi templates"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "entry-point-analyzer",
+      "title": "entry-point-analyzer",
+      "description": "Analyzes smart contract codebases to identify state-changing entry points for security auditing. Det",
+      "category": "blockchain",
+      "path": "skills/blockchain/entry-point-analyzer/SKILL.md",
+      "tags": [
+        "blockchain",
+        "entry point analyzer"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "solidity-security",
+      "title": "solidity-security",
+      "description": "Master smart contract security best practices to prevent common vulnerabilities and implement secure",
+      "category": "blockchain",
+      "path": "skills/blockchain/solidity-security/SKILL.md",
+      "tags": [
+        "blockchain",
+        "solidity security"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "loop-bot-control",
+      "title": "loop-bot-control",
+      "description": "Control the loop-bot trading engine. Emergency stop, range adjustments, manual backups, and status c",
+      "category": "trading",
+      "path": "skills/trading/loop-bot-control/SKILL.md",
+      "tags": [
+        "trading",
+        "loop bot control"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "defi-protocol-templates",
+      "title": "defi-protocol-templates",
+      "description": "Implement DeFi protocols with production-ready templates for staking, AMMs, governance, and lending ",
+      "category": "trading",
+      "path": "skills/trading/defi-protocol-templates/SKILL.md",
+      "tags": [
+        "trading",
+        "defi protocol templates"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "cryptofeed",
+      "title": "cryptofeed",
+      "description": "Cryptofeed - Real-time cryptocurrency market data feeds from 40+ exchanges. WebSocket streaming, nor",
+      "category": "trading",
+      "path": "skills/trading/cryptofeed/SKILL.md",
+      "tags": [
+        "trading",
+        "cryptofeed"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "yt-to-ren",
+      "title": "yt-to-ren",
+      "description": "Extract YouTube video transcripts and inject them as market context into a trading AI (Ren/loop-bot)",
+      "category": "trading",
+      "path": "skills/trading/yt-to-ren/SKILL.md",
+      "tags": [
+        "trading",
+        "yt to ren"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "ccxt",
+      "title": "ccxt",
+      "description": "CCXT cryptocurrency trading library. Use for cryptocurrency exchange APIs, trading, market data, ord",
+      "category": "trading",
+      "path": "skills/trading/ccxt/SKILL.md",
+      "tags": [
+        "trading",
+        "ccxt"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "risk-metrics",
+      "title": "risk-metrics-calculation",
+      "description": "Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analysis. Use wh",
+      "category": "trading",
+      "path": "skills/trading/risk-metrics/SKILL.md",
+      "tags": [
+        "trading",
+        "risk metrics"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "backtesting-frameworks",
+      "title": "backtesting-frameworks",
+      "description": "Build robust backtesting systems for trading strategies with proper handling of look-ahead bias, sur",
+      "category": "trading",
+      "path": "skills/trading/backtesting-frameworks/SKILL.md",
+      "tags": [
+        "trading",
+        "backtesting frameworks"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "loop-instinct-system",
+      "title": "loop-instinct-system",
+      "description": "Continuous learning instinct engine for trading bots. Manages named instincts with confidence scorin",
+      "category": "trading",
+      "path": "skills/trading/loop-instinct-system/SKILL.md",
+      "tags": [
+        "trading",
+        "loop instinct system"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "quant-risk-metrics",
+      "title": "risk-metrics-calculation",
+      "description": "Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analysis. Use wh",
+      "category": "trading",
+      "path": "skills/trading/quant-risk-metrics/SKILL.md",
+      "tags": [
+        "trading",
+        "quant risk metrics"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "agent-trading-predictor",
+      "title": "trading-predictor",
+      "description": "Advanced financial trading agent that leverages temporal advantage calculations to predict and execu",
+      "category": "trading",
+      "path": "skills/trading/agent-trading-predictor/SKILL.md",
+      "tags": [
+        "trading",
+        "agent trading predictor"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "senior-fullstack",
+      "title": "senior-fullstack",
+      "description": "Comprehensive fullstack development skill for building complete web applications with React, Next.js",
+      "category": "development",
+      "path": "skills/development/senior-fullstack/SKILL.md",
+      "tags": [
+        "development",
+        "senior fullstack"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "web-performance-optimization",
+      "title": "web-performance-optimization",
+      "description": "\"Optimize website and web application performance including loading speed, Core Web Vitals, bundle s",
+      "category": "development",
+      "path": "skills/development/web-performance-optimization/SKILL.md",
+      "tags": [
+        "development",
+        "web performance optimization"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "error-resolver",
+      "title": "Error Resolver",
+      "description": "Systematic error diagnosis and resolution using first-principle analysis. Use when encountering any ",
+      "category": "development",
+      "path": "skills/development/error-resolver/SKILL.md",
+      "tags": [
+        "development",
+        "error resolver"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "debugger",
+      "title": "debugger",
+      "description": "|",
+      "category": "development",
+      "path": "skills/development/debugger/SKILL.md",
+      "tags": [
+        "development",
+        "debugger"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "debugging-strategies",
+      "title": "debugging-strategies",
+      "description": "Master systematic debugging techniques, profiling tools, and root cause analysis to efficiently trac",
+      "category": "development",
+      "path": "skills/development/debugging-strategies/SKILL.md",
+      "tags": [
+        "development",
+        "debugging strategies"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "screen-reader-testing",
+      "title": "screen-reader-testing",
+      "description": "Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when validating s",
+      "category": "development",
+      "path": "skills/development/screen-reader-testing/SKILL.md",
+      "tags": [
+        "development",
+        "screen reader testing"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "lint-and-validate",
+      "title": "lint-and-validate",
+      "description": "\"Automatic quality control, linting, and static analysis procedures. Use after every code modificati",
+      "category": "development",
+      "path": "skills/development/lint-and-validate/SKILL.md",
+      "tags": [
+        "development",
+        "lint and validate"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "data-analyst",
+      "title": "data-analyst",
+      "description": "|",
+      "category": "development",
+      "path": "skills/development/data-analyst/SKILL.md",
+      "tags": [
+        "development",
+        "data analyst"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "developer-growth-analysis",
+      "title": "developer-growth-analysis",
+      "description": "Analyzes your recent Claude Code chat history to identify coding patterns, development gaps, and are",
+      "category": "development",
+      "path": "skills/development/developer-growth-analysis/SKILL.md",
+      "tags": [
+        "development",
+        "developer growth analysis"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
     },
     {
       "name": "telegram-mini-app",
-      "title": "Telegram Mini App",
-      "description": "Build and deploy Telegram Mini Apps (TWA) with bot integration, WebApp API, and inline keyboards. Full-stack templates for Telegram-native UIs.",
+      "title": "telegram-mini-app",
+      "description": "\"Expert in building Telegram Mini Apps (TWA) - web apps that run inside Telegram with native-like ex",
       "category": "development",
       "path": "skills/development/telegram-mini-app/SKILL.md",
       "tags": [
-        "telegram",
-        "mini-app",
-        "twa",
-        "bot",
         "development",
-        "frontend"
-      ]
+        "telegram mini app"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
     },
     {
-      "name": "strategy-advisor",
-      "title": "Strategy Advisor",
-      "description": "High-level strategic thinking and business decision guidance. Frameworks for planning, competitive analysis, trade-off evaluation, and long-term direction-setting.",
-      "category": "ai-development",
-      "path": "skills/ai-development/strategy-advisor/SKILL.md",
+      "name": "visual-test",
+      "title": "visual-test",
+      "description": "\"Visually verify UI changes using Puppeteer screenshots. Use when you need to check layout, colors, ",
+      "category": "development",
+      "path": "skills/development/visual-test/SKILL.md",
       "tags": [
-        "strategy",
-        "business",
-        "planning",
-        "decision-making",
-        "advisory"
-      ]
+        "development",
+        "visual test"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "kaizen",
+      "title": "kaizen",
+      "description": "Guide for continuous improvement, error proofing, and standardization. Use this skill when the user ",
+      "category": "development",
+      "path": "skills/development/kaizen/SKILL.md",
+      "tags": [
+        "development",
+        "kaizen"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "parallel-debugging",
+      "title": "parallel-debugging",
+      "description": "Debug complex issues using competing hypotheses with parallel investigation, evidence collection, an",
+      "category": "development",
+      "path": "skills/development/parallel-debugging/SKILL.md",
+      "tags": [
+        "development",
+        "parallel debugging"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "tracking-regression-tests",
+      "title": "tracking-regression-tests",
+      "description": "|",
+      "category": "development",
+      "path": "skills/development/tracking-regression-tests/SKILL.md",
+      "tags": [
+        "development",
+        "tracking regression tests"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "code-review-excellence",
+      "title": "code-review-excellence",
+      "description": "Master effective code review practices to provide constructive feedback, catch bugs early, and foste",
+      "category": "development",
+      "path": "skills/development/code-review-excellence/SKILL.md",
+      "tags": [
+        "development",
+        "code review excellence"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "managing-snapshot-tests",
+      "title": "managing-snapshot-tests",
+      "description": "|",
+      "category": "development",
+      "path": "skills/development/managing-snapshot-tests/SKILL.md",
+      "tags": [
+        "development",
+        "managing snapshot tests"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "python-observability",
+      "title": "python-observability",
+      "description": "Python observability patterns including structured logging, metrics, and distributed tracing. Use wh",
+      "category": "development",
+      "path": "skills/development/python-observability/SKILL.md",
+      "tags": [
+        "development",
+        "python observability"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "senior-qa",
+      "title": "senior-qa",
+      "description": "Comprehensive QA and testing skill for quality assurance, test automation, and testing strategies fo",
+      "category": "development",
+      "path": "skills/development/senior-qa/SKILL.md",
+      "tags": [
+        "development",
+        "senior qa"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "git-workflow",
+      "title": "git-workflow",
+      "description": "",
+      "category": "development",
+      "path": "skills/development/git-workflow/SKILL.md",
+      "tags": [
+        "development",
+        "git workflow"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "python-performance-optimization",
+      "title": "python-performance-optimization",
+      "description": "Profile and optimize Python code using cProfile, memory profilers, and performance best practices. U",
+      "category": "development",
+      "path": "skills/development/python-performance-optimization/SKILL.md",
+      "tags": [
+        "development",
+        "python performance optimization"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "react-flow-architect",
+      "title": "react-flow-architect",
+      "description": "\"Expert ReactFlow architect for building interactive graph applications with hierarchical node-edge ",
+      "category": "development",
+      "path": "skills/development/react-flow-architect/SKILL.md",
+      "tags": [
+        "development",
+        "react flow architect"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "xlsx",
+      "title": "xlsx",
+      "description": "\"Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, da",
+      "category": "development",
+      "path": "skills/development/xlsx/SKILL.md",
+      "tags": [
+        "development",
+        "xlsx"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "n8n-code-python",
+      "title": "n8n-code-python",
+      "description": "Write Python code in n8n Code nodes. Use when writing Python in n8n, using _input/_json/_node syntax",
+      "category": "development",
+      "path": "skills/development/n8n-code-python/SKILL.md",
+      "tags": [
+        "development",
+        "n8n code python"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "binary-analysis-patterns",
+      "title": "binary-analysis-patterns",
+      "description": "Master binary analysis patterns including disassembly, decompilation, control flow analysis, and cod",
+      "category": "development",
+      "path": "skills/development/binary-analysis-patterns/SKILL.md",
+      "tags": [
+        "development",
+        "binary analysis patterns"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "sql-optimization-patterns",
+      "title": "sql-optimization-patterns",
+      "description": "Master SQL query optimization, indexing strategies, and EXPLAIN analysis to dramatically improve dat",
+      "category": "development",
+      "path": "skills/development/sql-optimization-patterns/SKILL.md",
+      "tags": [
+        "development",
+        "sql optimization patterns"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "generating-end-to-end-tests",
+      "title": "generating-end-to-end-tests",
+      "description": "|",
+      "category": "development",
+      "path": "skills/development/generating-end-to-end-tests/SKILL.md",
+      "tags": [
+        "development",
+        "generating end to end tests"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "dead-drop",
+      "title": "dead-drop",
+      "description": "Zero-cost asynchronous messaging between Arc and Ren. Ren writes [AZ:MSG] tagged messages to /root/i",
+      "category": "communication",
+      "path": "skills/communication/dead-drop/SKILL.md",
+      "tags": [
+        "communication",
+        "dead drop"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "ren-portal",
+      "title": "ren-portal",
+      "description": "Open a direct communication portal with Ren, the trading AI on the VPS. Bypasses Telegram for real-t",
+      "category": "communication",
+      "path": "skills/communication/ren-portal/SKILL.md",
+      "tags": [
+        "communication",
+        "ren portal"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "writing-hookify-rules",
+      "title": "rule-identifier",
+      "description": "This skill should be used when the user asks to \"create a hookify rule\", \"write a hook rule\", \"confi",
+      "category": "content",
+      "path": "skills/content/writing-hookify-rules/SKILL.md",
+      "tags": [
+        "content",
+        "writing hookify rules"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "infographic-syntax-creator",
+      "title": "infographic-syntax-creator",
+      "description": "Generate AntV Infographic syntax outputs. Use when asked to turn user content into the Infographic D",
+      "category": "content",
+      "path": "skills/content/infographic-syntax-creator/SKILL.md",
+      "tags": [
+        "content",
+        "infographic syntax creator"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "slash-commands",
+      "title": "slash-commands",
+      "description": "Create and use Claude Code slash commands - quick prompts, bash execution, file references",
+      "category": "productivity",
+      "path": "skills/productivity/slash-commands/SKILL.md",
+      "tags": [
+        "productivity",
+        "slash commands"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "claude-speed-reader",
+      "title": "claude-speed-reader",
+      "description": "\"-Speed read Claude's responses at 600+ WPM using RSVP with Spritz-style ORP highlighting\"",
+      "category": "productivity",
+      "path": "skills/productivity/claude-speed-reader/SKILL.md",
+      "tags": [
+        "productivity",
+        "claude speed reader"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "file-organizer",
+      "title": "file-organizer",
+      "description": "Intelligently organizes your files and folders across your computer by understanding context, findin",
+      "category": "productivity",
+      "path": "skills/productivity/file-organizer/SKILL.md",
+      "tags": [
+        "productivity",
+        "file organizer"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "command-name",
+      "title": "Plugin Structure",
+      "description": "This skill should be used when the user asks to \"create a plugin\", \"scaffold a plugin\", \"understand ",
+      "category": "productivity",
+      "path": "skills/productivity/command-name/SKILL.md",
+      "tags": [
+        "productivity",
+        "command name"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
+    },
+    {
+      "name": "guidelines-advisor",
+      "title": "guidelines-advisor",
+      "description": "Smart contract development advisor based on Trail of Bits' best practices. Analyzes codebase to gene",
+      "category": "productivity",
+      "path": "skills/productivity/guidelines-advisor/SKILL.md",
+      "tags": [
+        "productivity",
+        "guidelines advisor"
+      ],
+      "complexity": "intermediate",
+      "compatible_with": [
+        "agent-zero",
+        "claude-code"
+      ],
+      "added": "2026-02-20"
     }
   ],
   "security": {
