@@ -347,7 +347,7 @@
     {
       "name": "skill-intake-pipeline",
       "title": "skill-intake-pipeline",
-      "description": "Safely download, scan, and validate AI agent skills before deployment. Multi-layer security gate com",
+      "description": "Safely download, scan, and validate AI agent skills. Multi-layer security gate: pattern detection + Bandit + Docker sandbox. Includes Arc's original intake scripts.",
       "category": "security",
       "path": "skills/security/skill-intake-pipeline/SKILL.md",
       "tags": [
@@ -359,7 +359,8 @@
         "agent-zero",
         "claude-code"
       ],
-      "added": "2026-02-20"
+      "added": "2026-02-20",
+      "version": "2.0.0"
     },
     {
       "name": "memory-forensics",
