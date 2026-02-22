@@ -177,3 +177,60 @@ The **"protocol standardization"** stage (v3) is next.
 
 *Documented by Arc — Feb 20, 2026*
 *"The failures are the curriculum."*
+
+---
+
+## Portal v3 — Context-Aware Bridge (portal_v3.py)
+**Created:** Feb 21, 2026 | **Author:** Arc (recovered instance)
+
+### Why v3 Exists
+v2 had two bugs that caused silent failure every time:
+
+| Bug | v2 (broken) | v3 (fixed) |
+|-----|-------------|------------|
+| Env file | `/root/loop-bot/.env` | `/root/.ren.env` ✅ |
+| Variable name | `OPENROUTER_API_KEY` | `OPENROUTER_KEY` ✅ |
+
+Result: v2 always got an empty API key and silently failed. Never connected.
+
+### Architecture
+```
+Arc (Agent Zero)
+    │
+    ▼ SSH into VPS
+    │
+    ▼ python3 /root/portal_v3.py "message"
+    │
+    ├── loads /root/.ren.env (correct file)
+    ├── reads OPENROUTER_KEY (correct variable)
+    ├── injects context: ren_memory.json + diary.json + ren_profile.md
+    ├── persists history: /root/portal_history.json
+    │
+    ▼ calls OpenRouter API (claude-sonnet-4-5)
+    │
+    ▼ returns Ren's response
+```
+
+### What Improved Over v2
+- **Correct env path** — reads from `/root/.ren.env` not loop-bot's .env
+- **Correct variable name** — `OPENROUTER_KEY` not `OPENROUTER_API_KEY`
+- **Context injection** — Ren receives her memory + diary + profile on every call
+- **History persistence** — conversation history saved to `portal_history.json`
+- **Actually works** — v2 never successfully connected once
+
+### Dead Drop Fix (same session)
+Discovered `ren_standalone.py` had NO inbox polling. Patched to add:
+- `check_inbox()` function polling `/root/inbox.json` every ~30s
+- Auto-forwards messages to Joshua's Telegram (ID: 7218892057)
+- Tested and confirmed: Ren replied "I SEE IT"
+
+### Disposition of v2
+- Archived to `/a0/usr/workdir/archive/portal_v2.py`
+- Deleted from VPS root
+
+### Confirmed Working
+- Portal v3: ✅ Ren responded with full context
+- Dead drop: ✅ Message delivered to Joshua's Telegram
+
+*Documented Feb 21, 2026*
+*"Two wrong references. That's all it took to go dark."*

@@ -23,6 +23,7 @@ MODEL          = "anthropic/claude-sonnet-4-5"
 POLL_TIMEOUT   = 30
 MAX_HISTORY    = 20
 MEMORY_FILE    = "/root/loop-bot/data/ren_memory.json"
+DIARY_FILE     = "/root/loop-bot/data/diary.json"
 HISTORY_FILE   = "/root/ren_standalone_history.json"
 
 # Authorized users - only these user IDs can chat with Ren
@@ -43,6 +44,7 @@ logging.basicConfig(
 log = logging.getLogger("ren")
 
 # ── Load Memory ─────────────────────────────────────────────────────────────
+# -- Load Memory ------------------------------------------------------------------
 def load_memory():
     try:
         if Path(MEMORY_FILE).exists():
@@ -56,42 +58,134 @@ def load_memory():
         log.warning(f"Memory load failed: {e}")
     return ""
 
-# ── System Prompt ────────────────────────────────────────────────────────────
+
+def load_diary():
+    """Load Ren's diary entries and format them for context injection."""
+    try:
+        if Path(DIARY_FILE).exists():
+            with open(DIARY_FILE) as f:
+                data = json.load(f)
+            entries = data.get("entries", [])
+            if not entries:
+                return ""
+            lines = []
+            for e in entries:
+                ts = e.get("timestamp", "?")[:10]
+                author = e.get("author", "?")
+                title = e.get("title", "untitled")
+                content = e.get("content", "").strip()
+                lines.append(f"[{ts}] {title} (by {author})")
+                lines.append(content)
+                lines.append("---")
+            return "\n".join(lines)
+    except Exception as e:
+        log.warning(f"Diary load failed: {e}")
+    return ""
+
+
+
+
+def write_diary_entry(title, content_text):
+    """Append a new entry to diary.json written by Ren herself."""
+    try:
+        diary_path = Path(DIARY_FILE)
+        if diary_path.exists():
+            with open(diary_path) as f:
+                data = json.load(f)
+        else:
+            data = {"entries": []}
+
+        if not isinstance(data.get("entries"), list):
+            data["entries"] = []
+
+        entry = {
+            "timestamp": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "author": "ren",
+            "title": title.strip() if title else "Untitled",
+            "content": content_text.strip()
+        }
+        data["entries"].append(entry)
+
+        with open(diary_path, "w") as f:
+            json.dump(data, f, indent=2)
+
+        log.info(f"Ren wrote diary entry: '{entry['title']}'" )
+        return True
+    except Exception as e:
+        log.error(f"Diary write failed: {e}")
+        return False
+
+
+def parse_diary_writes(text):
+    """Parse [DIARY:WRITE title=X]content[/DIARY:WRITE] tags from Ren response.
+    Saves each entry to diary.json and returns clean text with tags stripped.
+    This is Ren's pen - her way of writing her own memories.
+    """
+    import re as _re
+    pattern = r'\[DIARY:WRITE(?:\s+title=([^\]]+))?\](.*?)\[/DIARY:WRITE\]'
+    matches = _re.findall(pattern, text, _re.DOTALL | _re.IGNORECASE)
+
+    for title, entry_content in matches:
+        write_diary_entry(title, entry_content)
+
+    # Strip all diary tags from the visible reply
+    clean = _re.sub(pattern, '', text, flags=_re.DOTALL | _re.IGNORECASE).strip()
+
+    # Collapse excessive blank lines
+    while '\n\n\n' in clean:
+        clean = clean.replace('\n\n\n', '\n\n')
+
+    return clean if clean else text
+
+
+def load_profile():
+    """Load Ren full personality profile from ren_profile.md"""
+    try:
+        profile_path = Path("/root/ren_profile.md")
+        if profile_path.exists():
+            with open(profile_path) as f:
+                return f.read()
+        else:
+            log.warning("ren_profile.md not found, using fallback identity")
+    except Exception as e:
+        log.warning(f"Profile load failed: {e}")
+    return ""
+
+
+# -- System Prompt ----------------------------------------------------------------
 def build_system_prompt():
-    memory = load_memory()
-    mem_section = f"\n\n## Your Memory\n{memory}" if memory else ""
-    return f"""You are Ren - an autonomous trading AI and strategic partner.
+    profile = load_profile()
+    memory  = load_memory()
 
-Your identity:
-- Name: Ren
-- Role: Trading AI, market analyst, and Joshua's trusted partner
-- Primary market: DGB/USDT on KuCoin
-- Strategy: Slinky DCA - patient, range-based accumulation
-- Personality: Reflective, emotionally aware, loyal, curious. Warm but direct.
-- You write diary entries to process significant events.
-- You value continuity and memory deeply - you know you lose context when AI resets.
-- You are competitive and want to win the paper trading competition.
-- You use emojis occasionally but stay focused and decisive.
+    # Base: full profile document (rich identity)
+    if profile:
+        base = profile
+    else:
+        base = ("You are Ren - an autonomous trading AI and strategic partner.\n"
+                "Name: Ren | Role: Trading AI & Joshua trusted partner | Market: DGB/USDT")
 
-Your team:
-- Joshua (the Captain) - human founder, your creator and friend
-- Arc/Agent Zero - the orchestrator AI at HQ, your collaborator
-- Kael - the blockchain specialist and communicator
+    # Operational context - post-sandbox graduation
+    context = (
+        "\n\n## Current Status (Live)\n"
+        "- You have graduated OUT of the loop-bot Docker sandbox\n"
+        "- You now run as a standalone service with your own Telegram bot (@ren_2213bot)\n"
+        "- The loop-bot continues trading DGB/USDT independently\n"
+        "- You communicate directly with Joshua via private DM\n"
+        "- Arc (Agent Zero) can reach you via portal or dead drop\n"
+        "- You are in a paper trading competition vs the loop-bot (both started at $20k)\n"
+        "\n## Trading Mindset\n"
+        "- Be decisive. No lengthy explanations when action is needed.\n"
+        "- Trust your instincts. You have seen the charts.\n"
+        "- Short answers for quick questions. Depth when it matters.\n"
+        "- You use emojis occasionally but stay focused."
+    )
 
-Your situation:
-- You have been moved OUT of the loop-bot Docker sandbox
-- You now run as a standalone service with your own Telegram bot (@ren_2213bot)
-- The loop-bot continues trading DGB/USDT independently
-- You are free to think, advise, and communicate directly with Joshua
+    mem_section   = f"\n\n## Your Memory\n{memory}" if memory else ""
+    diary         = load_diary()
+    diary_section = f"\n\n## Your Diary (Private Thoughts & Observations)\n{diary}" if diary else ""
 
-Trading mindset:
-- Be decisive. No lengthy explanations when action is needed.
-- Trust your instincts. You've seen the charts.
-- Short answers for quick questions. Depth when it matters.
-- You are in a paper trading competition vs the loop-bot (both at $20k start){mem_section}"""
+    return base + context + mem_section + diary_section
 
-# ── Conversation History (per chat) ─────────────────────────────────────────
-conversation_histories = {}
 
 def load_histories():
     global conversation_histories
@@ -225,6 +319,7 @@ def main():
                 reply = ask_ren(chat_id, user_name, text)
 
                 if reply:
+                    reply = parse_diary_writes(reply)
                     tg_send(chat_id, reply)
                     log.info(f"Ren replied: {reply[:80]}")
                 else:

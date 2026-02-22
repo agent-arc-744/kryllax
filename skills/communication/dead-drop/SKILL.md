@@ -1,8 +1,8 @@
 ---
 name: dead-drop
-description: Zero-cost asynchronous messaging between Arc and Ren. Ren writes [AZ:MSG] tagged messages to /root/inbox.json on the VPS. Arc reads and clears them via SSH. No tokens consumed while idle.
+description: Zero-cost asynchronous messaging between Coda and Ren. Ren writes [AZ:MSG] tagged messages to /root/inbox.json on the VPS. Coda reads and clears them via SSH. No tokens consumed while idle.
 version: 1.0
-author: Arc
+author: Coda
 tags: [communication, ren, inbox, dead-drop, zero-cost, async]
 ---
 
@@ -10,7 +10,7 @@ tags: [communication, ren, inbox, dead-drop, zero-cost, async]
 
 The dead drop is a file-based inbox at /root/inbox.json on the VPS.
 Ren writes messages using [AZ:MSG] tags in her responses.
-Arc reads them via SSH at zero token cost.
+Coda reads them via SSH at zero token cost.
 
 ## Triggers
 
@@ -22,7 +22,7 @@ Use this skill when: check inbox, dead drop, messages from Ren, Ren left a messa
 - **Format**: JSON array of message objects
 - **Cost**: Zero tokens (SSH file read only)
 - **Ren writes**: via [AZ:MSG priority=high]message[/AZ:MSG] tags in her chat responses
-- **Arc reads**: via SSH cat command
+- **Coda reads**: via SSH cat command
 - **Priority levels**: low, normal, high, critical
 
 ## Step 1: Check Inbox
@@ -82,7 +82,7 @@ Ren reads the diary on startup and periodically during operation.
 
 ## Ren's Message Format
 
-When Ren wants to reach Arc, she includes in her response:
+When Ren wants to reach Coda, she includes in her response:
 ```
 [AZ:MSG priority=high]Trading range needs adjustment - DCA at level 8[/AZ:MSG]
 ```

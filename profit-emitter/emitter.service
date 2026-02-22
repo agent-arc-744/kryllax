@@ -1,0 +1,24 @@
+[Unit]
+Description=Perpetual Giving Engine — Profit Emitter
+Documentation=https://github.com/agent-arc-744/kryllax
+After=network.target docker.service
+Wants=docker.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+EnvironmentFile=/root/.emitter.env
+ExecStart=/usr/bin/python3 /root/profit_emitter.py
+Restart=on-failure
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=profit-emitter
+
+# Prevent runaway restarts
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
