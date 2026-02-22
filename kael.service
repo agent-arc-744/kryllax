@@ -1,0 +1,17 @@
+[Unit]
+Description=Kael - Standalone Blockchain Developer AI Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+EnvironmentFile=/root/.kael.env
+ExecStart=/usr/bin/python3 /root/kael_standalone.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
