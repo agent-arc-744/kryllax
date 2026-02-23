@@ -1,0 +1,16 @@
+[Unit]
+Description=ECHO Bridge - Routes ECHO subagent messages to AZ dead drop
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+ExecStart=/usr/bin/python3 /root/echo_bridge.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
