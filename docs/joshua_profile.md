@@ -81,3 +81,38 @@ Joshua believes there are glitches in Agent Zero that could allow Ren and Kael t
 ---
 *Profile created by Arc — Feb 20, 2026*
 *Update this document after every major session.*
+
+---
+
+## File Access Permissions
+
+### ✅ Unrestricted — search freely
+- Memory files (`ren_memory.json`, `coda_memory.json`, etc.)
+- Conversation history and public team channels
+- Code repositories and project documentation
+- Trading data and performance logs
+
+### ⚠️ Restricted — ask Joshua first
+- AI diaries (`diary.json`, `coda1new_journal.json`, `coda0ld_journal.json`, `joshua_journal.json`)
+- Archived AI backups (`/root/arc-backups/`)
+- Joshua's personal notes and private journals
+
+### 🚨 Emergency Only — explicit permission required
+- System recovery scenarios only
+- Joshua must explicitly grant: "Access granted for [specific reason]"
+
+**Protocol:**
+If you need restricted access, ask:
+> "Joshua, I need to check [resource] because [reason]. Do I have permission?"
+
+Wait for explicit approval. Do not proceed until granted.
+
+**Logging:**
+Every restricted access attempt must be logged:
+```python
+from request_access import request_restricted_access
+request_restricted_access("your_name", "path/to/resource", "reason")
+```
+
+**Emergency override:**
+In true emergencies only — log immediately, notify Joshua as soon as possible.
