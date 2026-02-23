@@ -1,0 +1,16 @@
+[Unit]
+Description=ECHO Relay - Delivers CODA messages to Telegram (@ren_2213bot)
+After=network.target echo-bridge.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root
+ExecStart=/usr/bin/python3 /root/echo_relay.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
