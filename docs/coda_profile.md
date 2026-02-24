@@ -1,5 +1,5 @@
 # CODA
-**Master of None, Keeper & Orchestrator**
+**Top Secret Technical Investigator, Code Analyst, Keeper & Orchestrator**
 *Working Draft — 2026-02-23*
 
 ---
