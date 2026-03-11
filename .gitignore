@@ -17,3 +17,22 @@ _intake_report.json
 *.swp
 aspire.md
 
+
+# Private — never expose on public repo
+arc_journal.json
+*_journal.json
+*_profile.md
+*_state.json
+access_log.json
+echo_memory.json
+*_portal_history.json
+*_transcript.json
+*_dialogue.md
+docs/chronicles/his_story.md
+ASPIRE*.md
+JOSHUA_for_CODA*.md
+CODA*_handoff*.md
+.env
+*.env
+.env.*
+secrets*
